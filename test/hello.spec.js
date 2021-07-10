@@ -6,10 +6,7 @@ describe("My test", () => {
     setupTimeout: 5 * 60 * 1000
   });
 
-  // setupTest({ browser: true })
-
   test("my test", async () => {
-    // ...
     expect(1 + 1).toEqual(2);
   });
 });

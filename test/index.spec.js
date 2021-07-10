@@ -1,12 +1,12 @@
 import { get, setupTest } from "@nuxt/test-utils";
 
-describe("My test 2", () => {
+describe("Index page", () => {
   setupTest({
     server: true,
     setupTimeout: 5 * 60 * 1000
   });
 
-  test("my test", async () => {
+  test("it contain hello", async () => {
     const { body } = await get('/')
 
     expect(body).toContain('hello')
